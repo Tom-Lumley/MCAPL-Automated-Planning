@@ -1,0 +1,20 @@
+GWENDOLEN
+
+:name: bob
+
+:Initial Beliefs:
+belief1
+belief2
+belief3
+motivated
+dummyPredicate
+
+
+:Initial Goals:
+
+start[perform]
+
+
+:Plans:
+
++!start [perform] : {B hasPhone, B messageSent} <- print("yay");

@@ -1,0 +1,8 @@
+mas.file = /src/examples/gwendolen/project/agent.gwen
+mas.builder = gwendolen.GwendolenMASBuilder
+
+env = gwendolen.project.MyEnv
+
+log.warning = env
+
+
