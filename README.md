@@ -106,7 +106,7 @@ These additional tools or packages may be necessary for the project to run smoot
 
 To use this project, follow these steps:
 
-![Alt text](Capture111.png?raw=true "Usage")
+![Alt text](Capture111.PNG?raw=true "Usage")
 
 For questions, suggestions, or feedback regarding this project, feel free to reach out to the project maintainers:
 
