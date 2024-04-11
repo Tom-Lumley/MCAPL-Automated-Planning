@@ -19,7 +19,7 @@ public class PDDLGenerator {
     public static void generate(String agName, List<String> beliefs, List<String> predicates) {
         try {
             // Specify the file path for the PDDL file
-            String filePath = "src/examples/gwendolen/project/problem.pddl";
+            String filePath = "src/examples/gwendolen/project/"+agName+"problem.pddl";
             //System.out.println(filePath);
 
             // Create a FileWriter

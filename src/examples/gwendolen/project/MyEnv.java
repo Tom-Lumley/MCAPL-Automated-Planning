@@ -25,24 +25,16 @@
 
 package gwendolen.project;
 
-import ail.mas.AIL;
-import ail.mas.AILEnv;
 import ail.mas.DefaultEnvironment;
 import ail.mas.scheduling.ActionScheduler;
 import ail.semantics.AILAgent;
 import ail.syntax.*;
-import ail.util.AILConfig;
 import ail.util.AILexception;
 
 import java.util.List;
 
 
-/**
- * Environment for an Auction.
- *
- * @author louiseadennis
- *
- */
+
 public class MyEnv extends DefaultEnvironment {
     /**
      * Constructor.
@@ -55,11 +47,7 @@ public class MyEnv extends DefaultEnvironment {
         addPerceptListener(s);
     }
 
-    /**
-     * When a pickup action is executed the environment stores new perceptions
-     * for the agent - that its picked something up and its hands are now longer
-     * empty.
-     */
+
     public Unifier executeAction(String agName, Action act) throws AILexception {
         Unifier u = new Unifier();
         // Gets all agents

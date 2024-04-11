@@ -6,8 +6,18 @@ import ail.syntax.Term;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The Planning class is responsible for executing planning tasks for an AILAgent.
+ * It provides methods to execute planning based on different types of planning.
+ */
 public class Planning {
 
+    /**
+     * Executes planning based on the provided AILAgent and arguments.
+     * @param ag The AILAgent for which planning is executed.
+     * @param args The list of arguments representing the planning predicates.
+     * @return true if planning execution is successful, false otherwise.
+     */
     public boolean execute(AILAgent ag, List<Term> args) {
         ActionClass action = new ActionClass();
         int typeOfPlanning = action.typeOfPlanning;
@@ -68,6 +78,12 @@ public class Planning {
         return true;
     }
 
+    /**
+     * Finds the predicates that are missing in the provided beliefs.
+     * @param beliefs The list of beliefs.
+     * @param predicates The list of predicates to check.
+     * @return A list of predicates that are missing in the beliefs.
+     */
     private static List<String> findPredicates(List<String> beliefs, List<String> predicates) {
         List<String> missingPredicates = new ArrayList<>();
         for (String pred : predicates) {

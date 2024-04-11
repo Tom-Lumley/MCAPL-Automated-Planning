@@ -5,12 +5,14 @@
     (belief2)
     (belief3)
     (dummyPredicate)
+    (hasPhone)
     (motivated)
+    (onPhone)
+    (parentsHappy)
     (dummyPredicate)
   )
   (:goal
     (and
-      (hasPhone)
       (messageSent)
     )
   )

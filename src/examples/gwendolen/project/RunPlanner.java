@@ -59,7 +59,7 @@ public class RunPlanner {
         }
 
         if (choiceOfPlanner == 2) {
-            String args[] = new String[]{"-o", "src/examples/gwendolen/project/domain.pddl", "-f", "src/examples/gwendolen/project/problem.pddl", "-u", "7"};
+            String args[] = new String[]{"-o", "src/examples/gwendolen/project/domain.pddl", "-f", "src/examples/gwendolen/project/"+agName+"problem.pddl", "-u", "7"};
 
             // Synchronize access to ensure mutual exclusion
             synchronized (lock) {
