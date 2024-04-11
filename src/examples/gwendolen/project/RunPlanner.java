@@ -32,7 +32,7 @@ public class RunPlanner {
         if (choiceOfPlanner == 1) {
             try {
                 // Command to execute
-                String command = "src/examples/gwendolen/project/./ff -o src/examples/gwendolen/project/domain.pddl -f src/examples/gwendolen/project/problem.pddl";
+                String command = "src/examples/gwendolen/project/./ff -o src/examples/gwendolen/project/domain.pddl -f src/examples/gwendolen/project/"+agName+"problem.pddl";
 
                 // Create ProcessBuilder
                 ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));

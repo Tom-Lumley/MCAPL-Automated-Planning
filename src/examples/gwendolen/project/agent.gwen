@@ -3,12 +3,6 @@ GWENDOLEN
 :name: bob
 
 :Initial Beliefs:
-belief1
-belief2
-belief3
-motivated
-dummyPredicate
-
 
 :Initial Goals:
 
@@ -17,4 +11,30 @@ start[perform]
 
 :Plans:
 
-+!start [perform] : {B hasPhone, B messageSent} <- print("yay");
++!start [perform] : {B hasPhone, B messageSent} <- print("yay"); // Plan Context Recovery
+
+:name: alice
+
+:Initial Beliefs:
+
+:Initial Goals:
+
+start[perform]
+
+
+:Plans:
+
++!start [perform] : {True} <- textfriend;
+
+:name: charlie
+
+:Initial Beliefs:
+
+:Initial Goals:
+
+start[perform]
+
+
+:Plans:
+
++!start [perform] : {True} <- planning(onPhone), textfriend;

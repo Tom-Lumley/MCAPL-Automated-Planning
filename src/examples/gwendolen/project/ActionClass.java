@@ -23,7 +23,7 @@ public class ActionClass {
     /**
      * Choice of Planner: Offline (1) or Online (2)
      */
-    public int typeOfPlanning = 2;
+    public int typeOfPlanning = 1;
 
     // Logger for normal logging
     private Logger logger = Logger.getLogger("t1."+"Env");
@@ -171,6 +171,7 @@ public class ActionClass {
         // Offline Planning
         if (typeOfPlanning == 1) {
             List<String> plan = RunPlanner.run(ag.getAgName(), beliefs, goalStates, 1);
+            System.out.println(plan);
             assert plan != null;
             if(plan.isEmpty()){
                 System.out.println("An error occurred with the planner");
